@@ -10,8 +10,9 @@ html {
 
 body {
     height: 100%;
-    /*background-color: #4ABDAC;*/
-    margin-top: 80px;
+    background-color: #4ABDAC;
+    /*margin-top: 80px;*/
+    padding-top: 80px;
     display: scroll;    
 }
 
