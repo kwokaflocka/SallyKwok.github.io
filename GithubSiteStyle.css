@@ -5,18 +5,20 @@
     }
 
 html {
-    color: #4ABDAC;
+    background-color: #4ABDAC;
     margin:0;
     padding:0;
+    display:scroll;
 }
 
 body {
-    height: 100%;
-    width: 100%
-    color: #4ABDAC;
+    /*height: 100%;*/
+    width: 100%;
+    background-color: #4ABDAC;
     /*margin-top: 80px;*/
     padding-top: 80px;
-    display: scroll;    
+    display: scroll;  
+    
 }
 
 .portrait {
