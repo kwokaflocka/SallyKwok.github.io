@@ -13,8 +13,6 @@ html {
     padding:0;
     display:scroll;
 
-    border-style: dotted;
-    border-color:orangered;
 }
 
 body {
@@ -25,8 +23,6 @@ body {
     padding-top: 80px;
     /*display: scroll;  */
 
-    border-style: dashed;
-    border-color: purple;
     
 }
 
