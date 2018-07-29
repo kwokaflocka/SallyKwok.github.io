@@ -26,6 +26,10 @@ body {
     
 }
 
+.row {
+    background-color: #4ABDAC;
+}
+
 .portrait {
     border-style: solid;
     border-color:  #F7B733;
