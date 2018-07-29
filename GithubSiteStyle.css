@@ -28,7 +28,10 @@ body {
 
 .row {
     background-color: #4ABDAC;
+    width: 100%;
 }
+
+
 
 .portrait {
     border-style: solid;
