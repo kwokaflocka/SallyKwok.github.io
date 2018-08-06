@@ -50,11 +50,17 @@ body {
 
 .introduction {
     margin-bottom: 5%;
+    
 }
 
 .contact-info {
     text-align: center;
+    color: #FE5F55 ;
 }
+
+/*.contact-info:hover {
+    color: #D85147 ;
+}*/
 
 .mr-3 {
     /*border-style:solid;
@@ -62,6 +68,37 @@ body {
     padding: 6%;
     
 }
+
+a {
+    color: #FE5F55 ;
+}
+
+a:hover {
+    color: #D85147 ;
+}
+
+/*.fa {
+    color: #FE5F55;
+}*/
+
+/*.fa-lg:hover {
+    background-color: #D85147;
+}*/
+
+/* .tooltiptext {
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext::after {
+    content: "";
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+} */
 
 /*.btn-group {
     position: fixed;
