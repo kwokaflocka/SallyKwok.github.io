@@ -55,7 +55,7 @@ body {
 
 .contact-info {
     text-align: center;
-    color: #FE5F55 ;
+    /*color: #FE5F55 ;*/
 }
 
 /*.contact-info:hover {
@@ -70,11 +70,14 @@ body {
 }
 
 a {
-    color: #FE5F55 ;
+    /*color: #FE5F55 ;*/
+    /*color: #BA2D0B;*/
+    color: #D8350D;
 }
 
 a:hover {
-    color: #D85147 ;
+    /*color: #B52C0A;*/
+    color: #F55D3E;
 }
 
 /*.fa {
