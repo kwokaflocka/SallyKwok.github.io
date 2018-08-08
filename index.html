@@ -42,30 +42,44 @@
                     <p class="contact-info">
                         <a href="https://www.linkedin.com/in/sally-kwok-22a28713b/" target="_blank" class="li-ic mr-3"><i class="fa fa-lg fa-linkedin"> </i></a>
                         <a href="https://github.com/kwokaflocka" target="_blank" class="git-ic mr-3"><i class="fa fa-lg fa-github"> </i></a>
-                        <a href="#" onclick="setClipboard('sallyzxcv@gmail.com')" data-toggle="tooltip" data-placement="right" title="Click to copy to clipboard" class="email-ic mr-3"><i class="fa fa-lg fa-envelope-o"> </i>
+                        <a href="#" onclick="setClipboard('sallyzxcv@gmail.com'); myFunction()" data-toggle="tooltip" data-placement="right" title="Click to copy to clipboard" class="email-ic mr-3"><i class="fa fa-lg fa-envelope-o"> </i>
                             <!-- <span class="tooltiptext" id="myTooltip">Copy to clipboard</span> -->
                         </a>
                     </p>
                 </div>
+                <div id="snackbar">Email "sallyzxcv@gmail.com" copied to clipboard!</div>
             </div> 
         </div> 
+
+        
         
         <!-- target="_blank"    to open href in different page-->
    
 
         <!-- SCRIPTS -->
 
-        <script> function setClipboard(value) {
+        <script> 
+            function setClipboard(value) {
             var tempInput = document.createElement("input");
             tempInput.style = "position: absolute; left: -1000px; top: -1000px";
             tempInput.value = value;
             document.body.appendChild(tempInput);
             tempInput.select();
             document.execCommand("copy");
-            alert("Copied the text: " + tempInput.value);
+            //alert("Copied the text: " + tempInput.value);
             document.body.removeChild(tempInput);
         }
         </script>
+        
+        <script>
+            function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        </script>
+       
+        
 
         <script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script>
         <!-- Bootstrap tooltips -->

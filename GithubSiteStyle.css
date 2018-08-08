@@ -22,9 +22,7 @@ body {
     background-color: #4ABDAC;
     /*margin-top: 80px;*/
     padding-top: 5%;
-    /*display: scroll;  */
-
-    
+    /*display: scroll;  */  
 }
 
 .row {
@@ -32,8 +30,6 @@ body {
     width: 100%;
     margin: 0;
 }
-
-
 
 .portrait {
     border-style: solid;
@@ -49,8 +45,7 @@ body {
 }
 
 .introduction {
-    margin-bottom: 5%;
-    
+    margin-bottom: 5%; 
 }
 
 .contact-info {
@@ -58,15 +53,10 @@ body {
     /*color: #FE5F55 ;*/
 }
 
-/*.contact-info:hover {
-    color: #D85147 ;
-} */
-
 .mr-3 {
     /*border-style:solid;
     border-color: red;*/
     padding: 6%;
-    
 }
 
 a {
@@ -109,3 +99,47 @@ a:hover {
     border-style:solid;
     border-color: purple;
 }*/
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    /*margin-left: -125px;*/
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    /*position: fixed;*/
+    position: fixed;
+    z-index: 1;
+    margin: 0 auto;
+    /*left: 35%;*/
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
